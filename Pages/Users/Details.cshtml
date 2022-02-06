@@ -1,5 +1,5 @@
 ﻿@page
-@model LoginAndRegister.Pages.Users.DetailsModel
+@model WebApplication1.Pages.Users.DetailsModel
 
 @{
     ViewData["Title"] = "Details";
@@ -22,6 +22,12 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.User.password)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.User.birthday)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User.birthday)
         </dd>
     </dl>
 </div>

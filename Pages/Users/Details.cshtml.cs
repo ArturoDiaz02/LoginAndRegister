@@ -1,20 +1,21 @@
-﻿using System;
+﻿#nullable disable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using LoginAndRegister.Data;
 using LoginAndRegister.Models;
+using WebApplication1.Data;
 
-namespace LoginAndRegister.Pages.Users
+namespace WebApplication1.Pages.Users
 {
     public class DetailsModel : PageModel
     {
-        private readonly LoginAndRegister.Data.LoginAndRegisterContext _context;
+        private readonly WebApplication1.Data.WebApplication1Context _context;
 
-        public DetailsModel(LoginAndRegister.Data.LoginAndRegisterContext context)
+        public DetailsModel(WebApplication1.Data.WebApplication1Context context)
         {
             _context = context;
         }

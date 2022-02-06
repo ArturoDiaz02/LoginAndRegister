@@ -1,20 +1,21 @@
-﻿using System;
+﻿#nullable disable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using LoginAndRegister.Data;
 using LoginAndRegister.Models;
+using WebApplication1.Data;
 
-namespace LoginAndRegister.Pages.Users
+namespace WebApplication1.Pages.Users
 {
     public class CreateModel : PageModel
     {
-        private readonly LoginAndRegister.Data.LoginAndRegisterContext _context;
+        private readonly WebApplication1.Data.WebApplication1Context _context;
 
-        public CreateModel(LoginAndRegister.Data.LoginAndRegisterContext context)
+        public CreateModel(WebApplication1.Data.WebApplication1Context context)
         {
             _context = context;
         }
